@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="las mejores golosinas del peru">
+	<meta name="keywords" content="Golosinas, Chocolates, Caramelos">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/flexboxgrid.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="./jquery-1.8.3.min.js"></script>
+	<script src="js/jquery.slides.min.js"></script>
+	<script>
+		$(function(){
+			$(".slideshow").slidesjs({ width: 700, height: 350, navigation: false});
+		});
+	</script>
+	<script>
+		$('.menu a').on('click', function(){
+    		$('a.activo').removeClass('activo');
+    		$(this).addClass('activo');
+		});
+	</script>
+
+
+	<title>Inicio</title>
+</head>
+
+<body>
+<!-- CABECERA -->
+	<header>
+		<div class="container"> 
+			<div class="row middle-md">
+				<div class="logo col-xs-12 col-md-3 center-xs">
+					<a href=""><img src="imagenes/Logo.png" alt="Logotipo"></a>
+				</div>
+				<div class="marcas col-xs-12 col-md-9 center-xs">
+					<img id="img-marca" src="imagenes/marcas.jpg" alt="imagenes de marcas de productos">
+					<nav class="menu">
+						<div class="row around-xs middle-xs">
+							<div class="col-xs-3 col-md-1">
+								<a class="activo" href="index.html">Novedades</a>
+							</div>
+							<div class="col-xs-3 col-md-1">
+								<a href="#">Productos</a>
+							</div>
+							<div class="col-xs-9 col-md-6 last-xs">
+								<input type="search" placeholder="Buscar">
+								<!--<input type="button" value="B">-->
+							</div>
+							<div class="col-xs-3 col-md-1 last-md">
+								<a href="#">Carrito</a>
+							</div>
+
+						</div>
+					</nav>	
+				</div>
+			</div>
+		</div>
+	</header>
+
+<!-- MAIN O CUERPO DE PAGINA. -->	
+	<div class="main">
+	<!-- PUBLICIDAD -->	
+		<div <div class="container"> 
+			<div id="publicidad"> 
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="slideshow">
+							<a href="#"><img src="imagenes/slide/slide-1.jpg"></a>
+							<a href="#"><img src="imagenes/slide/slide-2.jpg"></a>
+							<a href="#"><img src="imagenes/slide/slide-3.jpg"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	<!-- OFERTA -->
+		<div class="container"> 
+			<div id="oferta">
+				<div class="row center-xs">
+					<div class="col-xs-3">
+						<div class="producto">
+							<h2>Ofertas1</h2>
+							<br><br><br><br><br><br><br><br><br><br><br><br>
+						</div>
+					</div>
+					<div class="col-xs-3">
+						<div class="producto">
+							<h2>Ofertas2</h2>
+							<br><br><br><br><br><br><br><br><br><br><br><br>
+						</div>
+					</div>
+					<div class="col-xs-3">
+						<div class="producto">
+							<h2>Ofertas3</h2>
+							<br><br><br><br><br><br><br><br><br><br><br><br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+
+<!-- PIE DE PAGINA -->
+	<footer>
+		<div class="container"> 
+			<div class="row">
+				<div class="col-xs-12">
+					<div id="pie">
+						<h2>PIE DE PAGINA</h2>
+						<br><br><br><br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	
+
+	
+
+
+<!--
+	<header>
+		<div id="subheader">
+			<div id="logo"><p><a href="#">Golozinas</a></p></div>
+		</div>		
+		<nav>
+			<ul>
+				<li><a href="#">Novedades</a></li>
+				<li><a href="#">Productos</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section id="contenedor">
+
+		<section id="cuerpo">
+
+			<section >
+				<div id="slideshow">
+					<a href="#"><img src="imagenes/slideshow/slide-caramelos.jpg"></a>
+					<a href="#"><img src="imagenes/slideshow/slide-galleta.jpg"></a>
+					<a href="#"><img src="imagenes/slideshow/slide-gomitas.jpg"></a>
+					<a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+      				<a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+				</div>
+			</section>
+
+			<section id="ofertas"></section>
+
+			<section id="contenido"> </section>
+	
+		</section>
+		
+
+		<footer>
+
+			<section id="acerca-de">
+				<article>
+					<hgroup><h3>Acerca de ....</h3></hgroup>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</article>
+			</section>
+
+			<section id="redes" >
+				<div class="email"><a href=""></a></div>
+				<div class="twitter"><a href=""></a></div>
+				<div class="youtube"><a href=""></a></div>
+				<div class="facebook"><a href=""></a></div>
+			</section>
+			
+		</footer>
+
+	</section>
+
+-->
+</body>
+
+
+</html>
