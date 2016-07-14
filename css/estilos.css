@@ -1,0 +1,148 @@
+@import url('reset.css');
+@import url('fuentes.css');
+
+/*--- Estilos Generales ---*/
+body {
+	/*background: #22AE6D;*/
+	font-family: arial,helvetica,sans-serif;
+}
+
+header {
+	background: #fff;
+	border-bottom: 1px solid #4E7FFF;
+}
+footer {background: #fff;}
+
+.main {background: #22AE6D;}
+
+.container { 
+	background: #fff;
+	width: 80%;
+	max-width: 1044px;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover{ text-decoration: none; }
+
+/*=== HEADER ===*/
+.marcas {
+	margin-bottom: 12px;
+}
+.marcas img{
+	width: 60%;
+}
+.menu a{
+	display: inline-block;
+	padding: 10px 0px;
+	border-radius: 5px;
+	font-family: sourcesans-regular;
+	font-size: 18px;
+	color: #E02F58;
+}
+.menu a:hover{
+	color: #4E7FFF;
+}
+.menu a.activo{
+	color: #4E7FFF;
+}
+.menu input {
+	padding: 5px 5px;
+	border: 1px solid #ccc;
+}
+.menu input:focus {
+	border: 1px solid #4E7FFF;
+}
+.menu input[type=search]{
+	margin-right: -6px;
+	width: 100%;
+	border-radius: 5px;
+}
+/*.menu input[type=button]{
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+}*/
+
+/*=== SLIDESHOW ===*/
+#publicidad {
+	background: #F2B60F;
+	padding-bottom: 10px;
+}
+}
+.slideshow {
+	display: none;
+	padding-bottom: 10px;
+	/*background: #ccc;*/
+}
+
+.slideshow a img{
+	width: 100%;
+}
+.slidesjs-pagination {
+    margin: 10px auto;
+    width: 100px;
+}
+
+.slidesjs-pagination li {
+    float: left;
+    list-style: none;
+    margin: 0 5px;
+}
+.slidesjs-pagination li a {
+      display: block;
+      width: 12px;
+      height: 0;
+      padding-top: 12px;
+      border-radius: 10px;
+      float: left;
+      overflow: hidden;
+      background: #fff;
+}
+.slidesjs-pagination li a:hover {
+      background: #E02F58;
+}
+
+.slidesjs-pagination li a.active {
+      background:#4E7FFF;
+}
+/*=== OFERTAS ===*/
+#oferta {
+	background: #4E7FFF;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #E02F58;
+}
+
+.producto{
+	border: 1px solid #E02F58;
+	border-radius: 5px;
+	background: #fff;
+
+
+}
+
+/*=== PIE DE PAGINA ===*/
+#pie {
+	border: 1px solid #000;
+	background: #fff;
+}
+
+
+/*=== ADAPTACION DE PANTALLA @MEDIA ===*/
+@media screen and (max-width: 1020px){
+	#img-marca{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.container { 
+	background: #fff;
+	width: 94%;
+	max-width: 1044px;
+}
+
+}
